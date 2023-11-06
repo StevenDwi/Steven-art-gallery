@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0; 
+    overflow: auto;
+    background: rgb(2, 0, 16);
+    background-image: linear-gradient(to right, rgb(2, 0, 16), rgb(100, 5, 183, 30%));
+    /*background: rgb(2, 0, 16);*/
+    color: white;
+}
+header {
+    display: inline;
+}
+
+.navbar{
+    display: inline;
+    position:relative;
+    z-index: 1;
+}
+nav {
+    background-color: #000000;
+    padding: 5px;
+    position: sticky;
+    border-bottom: 3px solid white;
+    top: 0;
+}
+   
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 3rem;
+}
+nav li {
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+nav a:hover{
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: rgb(254, 83, 254);
+    border-radius: 99px;
+    transition: all .2s ease-in-out;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.masstext{
+    font-size: 100px;
+    flex-grow: 0;
+}
+.profilecontain{
+    display: flex;
+}
+.profilecontain .desc{
+    margin-left: 2rem;
+    width: 30rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    padding-right: 5rem;
+}
+.profilepic{
+    flex-direction: row;
+    justify-items: center;
+    position: relative;
+}
+.profilepic{
+    clip-path: circle(100px at center);
+}
+figure{
+    position: relative;
+}
+figcaption{
+    color: rgb(254, 83, 254);
+    font-weight: bold;
+    margin-left: 3em;
+}
+
+.aboutme{
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: column;
+}
+.aboutme h1{
+    font-size: 50px;
+}
+.aboutme p{
+    flex-shrink: 0;
+    font-size: 50px;
+    margin-right: 5rem
+    ;
+}
+.gallery{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.gallery h1{
+    font-size: 50px;
+}
+.imgshow1{
+    margin: 2rem;
+    margin-inline: auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.imgshow2, .imgshow3{
+    margin-inline: auto;
+}
+.imgshow3{
+    margin-top: 2rem;
+}
+.contact{
+    margin-top: 7rem;
+}
+.contact h1{
+    font-size: 50px;
+}
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #000000;
+    border-top: 3px solid white;
+  }
+  main .social {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+   
+.social-media {
+    height: 100%;
+    display: flex;
+  }
+   
+.social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border: 2px solid white;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #000000;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-media li {
+    list-style-type: none;
+}
+.social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+.social-media li a:hover {
+    color: rgb(254, 83, 254);
+}
+h1{
+    color: rgb(254, 83, 254);
+}
+.profilepic{
+    margin: 7px;
+}
+.jumbotron{
+    font-size: 18x;
+    padding: 15px;
+    text-align: center;
+    color: white ;
+    background: #000000;
+    justify-content: center;
+}
+.jumbotron h1{
+    color: white;
+    font-size: 100px;
+}
+@media screen and (max-width: 1000px) {
+    main {
+      flex-flow: column nowrap;
+    }
+}
